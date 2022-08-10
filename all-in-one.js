@@ -609,4 +609,4 @@ square (9); */
 console.log (pizza.toppings[2]); */
 
 // ==================================================================
-module 19 porjonto okay
+// module 19 porjonto okay
