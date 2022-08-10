@@ -46,7 +46,7 @@ by 5. Help Sarah write the program. */
 var remainder = numberGiven % 5;
  console.log (remainder); */
 
- // ==================================================================
+// ==================================================================
 
 /*  5) নিচের ভেরিয়েবল ডিক্লিয়ারেশনে কোনটার মধ্যে কি সমস্যা আছে?
 Var price = 33; //var er v capital hoye gese
@@ -55,7 +55,7 @@ var boxName = ‘Cocola; // ending quotation nai
 var 88_price = 34; //starts with number
 var enum = -1; //enum is keyword
 var _$box’78 = ‘Monika’; // ’ not allowed 
-var home-address = “kochu khet”; //hyphane not allowed */ 
+var home-address = “kochu khet”; //hyphane not allowed */
 
 // ==================================================================
 
@@ -163,7 +163,8 @@ else {
 // ==================================================================
 
 
-/* ক্লাস সেভের এর ফাইনাল এক্সাম এ তুমি ফার্স্ট হয়েছ। তোমার বন্ধু আলিয়া, ডালিয়া, সালিয়া, মালিয়া, লিলিয়া আর জ্বালাইয়া - তাদের grade তুমি জানো না। তবে তাদের নম্বর জানো. আলিয়া 95 পেয়েছে, ডালিয়া 66 পেয়েছে, সালিয়া 80 পেয়েছে, মালিয়া পেয়েছে 59, লিলিয়া পেয়েছে 47, জ্বালাইয়া পেয়েছে 77। তুমি JS code দিয়ে তাদের grade বের করে দিতে পারবে?
+/*
+10) ক্লাস সেভের এর ফাইনাল এক্সাম এ তুমি ফার্স্ট হয়েছ। তোমার বন্ধু আলিয়া, ডালিয়া, সালিয়া, মালিয়া, লিলিয়া আর জ্বালাইয়া - তাদের grade তুমি জানো না। তবে তাদের নম্বর জানো. আলিয়া 95 পেয়েছে, ডালিয়া 66 পেয়েছে, সালিয়া 80 পেয়েছে, মালিয়া পেয়েছে 59, লিলিয়া পেয়েছে 47, জ্বালাইয়া পেয়েছে 77। তুমি JS code দিয়ে তাদের grade বের করে দিতে পারবে?
 
 ১) যারা ৫০ এর নিচে পেয়েছে, তাদের grade F.
 
@@ -176,3 +177,327 @@ else {
 ৫) যারা ৮০ বা তার উপরে পেয়েছে, অথবা ৯০ এর নিচে পেয়েছে, তাদের grade A.
 
 ৬) যারা ৯০ বা তার উপরে পেয়েছে, তাদের grade A+. */
+/* 
+const gradeDetermination = {
+    alia: 95,
+    dalia: 66,
+    salia: 80,
+    malia: 59,
+    lilia: 47,
+    jalaiya: 77
+}
+
+const names = Object.keys(gradeDetermination); // names are taken
+const grades = Object.values(gradeDetermination); // names are taken
+
+// console.log(names, grades);
+
+for (let i = 0; i < names.length; i++) {
+    if (grades[i] >= 90) {
+        console.log(names[i], 'Got A+');
+    }
+    else if (grades[i] >= 80) {
+        console.log(names[i], 'Got A');
+    }
+    else if (grades[i] >= 70) {
+        console.log(names[i], 'Got B');
+    }
+    else if (grades[i] >= 60) {
+        console.log(names[i], 'Got C');
+    }
+    else if (grades[i] >= 50) {
+        console.log(names[i], 'Got D');
+    }
+    else {
+        console.log (names[i], 'Failed'); 
+    }
+} */
+
+// ==================================================================
+/* 
+11) তাড়াহুড়া করে স্কুলের জন্য বের হচ্ছ কিন্তু রাস্তা পার হওয়ার সময় দেখলে, ট্রাফিক সিগন্যাল লাল রং। এই অবস্থায় যদি তুমি রাস্তা পার হওয়ার চেষ্টা কর, তাহলে ডেঞ্জার হতে পারে। যদি হলুদ রং হয় তাহলে তোমার থেমে যাওয়া উচিত। আর যদি ট্রাফিক সিগন্যাল গ্রিন হয় তাহলে তোমার রাস্তা পার হওয়া উচিত। তাই একটা কোড লিখে ফেলো। যেখানে আমরা signal নামে একটা ভেরিয়েবল থাকবে। সেটার মান green, yellow বা red হতে পারে। সেই অনুসারে ডিফারেন্ট ডিফারেন্ট কাজ হবে। তো, সেই কোড ফটাফট লিখে ফেলো।  */
+
+/* const signal = 'red'; // signal = green/red/yellow
+
+switch (signal){
+    case 'red':
+        console.log ('Danger');
+        break;
+    
+    case 'yellow':
+        console.log ('You should Stop');
+        break;
+    
+    case 'green':
+        console.log ('You Can cross the road');
+        break;
+    default:
+        console.log('i am color blind!!!')
+    
+} */
+
+// ==================================================================
+
+/* 
+12) প্রতিদিন তোমার কাজ কি? 
+
+১) রাত ৮ টা বাজে মডিউল আনলক করো  
+
+২) ফটাফট ভিডিও দেখে দেখে প্রাকটিস করো
+
+৩) ভিডিও দেখতে দেখতে নোটস নাও 
+
+৪) মডিউল শেষ হলে পুরা মডিউল নিজে নিজে প্রাকটিস করো 
+
+৫) কোন কিছু বুঝতে না পারলে (চিন্তা করে দেখো এইখানে কিন্তু একটা শর্ত আছে ), সাপোর্ট সেশনে জয়েন করো 
+
+এখন তোমার কাজ হচ্ছে একটা for লুপ ১০ বার চালিয়ে উপরের জিনিসগুলা আউটপুট হিসেবে দেখানো। 
+
+ */
+/* 
+var dailyTask = ['Module unlock at 8pm', 'Watch and Practice from video', 'Take Notes', 'Practice after watching Module', 'Not Understand', 'ami eibar bujhc vai'];
+
+for (var i = 0; i < dailyTask.length; i++) {
+    var showMyDailyTask = dailyTask [i];
+    if (dailyTask[i] == 'Not Understand') {
+        console.log('Task','[', i,'], If', dailyTask[i], ',', 'Lets join Support Session');
+        continue;
+    }
+    console.log ('Task','[', i,']', showMyDailyTask);
+} */
+
+
+// ==================================================================
+
+/* 13) আবার একই জিনিস while লুপ চালিয়ে ১০ বার দেখানো। */
+/* var dailyTask = ['Module unlock at 8pm', 'Watch and Practice from video', 'Take Notes', 'Practice after watching Module', 'Not Understand', ' abar porte bomu'];
+
+var i = 0;
+while (i < dailyTask.length) {
+    var showMyDailyTask = dailyTask[i];
+    if (dailyTask[i] == 'Not Understand') {
+        console.log('Task', '[', i, '], If', dailyTask[i], ',', 'Lets join Support Session');
+        i++;
+        continue;
+    }
+    console.log('Task', '[', i, ']', showMyDailyTask);
+    i++;
+
+} */
+
+// ==================================================================
+
+/* 14) উপরের প্রব্লেমটাই while লুপ রিভার্স ওয়েতে (decremental হিসেবে)করে দেখাও */
+
+/* var dailyTask = ['Module unlock at 8pm', 'Watch and Practice from video', 'Take Notes', 'Practice after watching Module', 'Not Understand', ' abar porte bomu'];
+
+var i = dailyTask.length-1;
+while (i >= 0) {
+    var showMyDailyTask = dailyTask[i];
+    if (dailyTask[i] == 'Not Understand') {
+        console.log('Task', '[', i, '], If', dailyTask[i], ',', 'Lets join Support Session');
+        i--;
+        continue;
+    }
+    console.log('Task', '[', i, ']', showMyDailyTask);
+    i--;
+
+} */
+
+// ==================================================================
+
+/* 15) উপরের প্রব্লেমটাই for লুপ রিভার্স ওয়েতে (decremental হিসেবে)করে দেখাও  */
+/* 
+var dailyTask = ['Module unlock at 8pm', 'Watch and Practice from video', 'Take Notes', 'Practice after watching Module', 'Not Understand', 'ami eibar bujhc vai'];
+
+for (var i = dailyTask.length-1 ; i >= 0 ; i--) {
+    var showMyDailyTask = dailyTask [i];
+    if (dailyTask[i] == 'Not Understand') {
+        console.log('Task','[', i,'], If', dailyTask[i], ',', 'Lets join Support Session');
+        continue;
+    }
+    console.log ('Task','[', i,']', showMyDailyTask);
+} */
+
+// ==================================================================
+
+/* 16) তোমার কাছে: ৮০০০০ টাকার বেশি হলে তুমি mac কিনবে, ৬০ টাকার বেশি হলে gaming ল্যাপটপ কিনবে, ৪০ হাজার টাকার বেশি হলে lenovo yoga কম্পিউটার কিনবে , ২০ হাজার টাকার বেশি হলে পুরান ল্যাপটপ কিনবে। না হয় তুমি মোবাইল দিয়ে কাজ চালাবে।  */
+/* 
+var myMoney = 50000;
+
+if (myMoney > 80000) {
+    console.log ("I will buy a Macbook");
+}
+else if (myMoney > 60000) {
+    console.log ("I will buy a Gaming laptop");
+}
+else if (myMoney > 40000) {
+    console.log ("I will buy a Lenova Yoga");
+}
+else if (myMoney > 20000) {
+    console.log ("I will buy a Old laptop");
+}
+else {
+    console.log ('Puran Mobile diyai kaj calamu')
+} */
+
+// ==================================================================
+
+
+/* 17) আসকে আমার মন ভালো নেই -- এই কথা ৩৯ বার আউটপুট হিসেবে দেখাও।  */
+
+/* 
+var loopVariable = 1;
+while (loopVariable <40) {
+    console.log (loopVariable, 'Ajke amar mon valo nei');
+    loopVariable++;
+}
+
+for (i = 1; i < 40; i++) {
+    console.log (i, 'আজকে আমার মন ভালো নেই');
+}*/
+
+// ==================================================================
+
+/* 18) while লুপ কিভাবে কাজ করে 
+Ans: আগে লুপ ভেরিয়াবল initialize করে তারপর consition দিয়ে, এরপর ব্লক অফ কোড, দেন increment/decrement করতে হবে।
+*/
+
+// ==================================================================
+
+/* 19) একটা কোড লিখে ৫৮ থেকে ৯৮ পর্যন্ত যত সংখ্যা আছে সেগুলাকে দেখাও  */
+
+/* var number = 58;
+while (number <=98) {
+    console.log (number);
+    number++;
+} */
+
+// ==================================================================
+
+/* 20) একটা কোড লিখে ৪১২ থেকে ৪৫৬ পর্যন্ত যত জোর সংখ্যা আছে সেগুলাকে দেখাও  */
+/* for (var i = 412; i < 456; i+=2) {
+    console.log ('Even numbers are:', i);
+} */
+
+// ==================================================================
+
+/* 21) একটা কোড লিখে ৫৮১ থেকে ৬২৩ পর্যন্ত যত বিজোড় সংখ্যা আছে সেগুলাকে দেখাও */
+/* 
+var number = 581;
+while (number <= 623) {
+    console.log (number);
+    number += 2;
+}  */
+
+// ==================================================================
+
+/* 22) তুমি এতদিন যা যা জিনিস শিখছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা for লুপ দিয়ে সেই array এর সব উপাদান কে আউটপুট হিসেবে দেখাও।  */
+
+/* var learned = ['html', 'css', 'html5', 'css3', 'Bootstrap', 'Tailwind'];
+
+var loopVariable = 0;
+
+while (loopVariable < learned.length) {
+    console.log (learned[loopVariable]);
+    loopVariable++;
+}  */
+
+// ==================================================================
+/* 
+23) তুমি এতদিন পর্যন্ত যে যে মডেলের মোবাইল ফোন ইউজ করেছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা while লুপ দিয়ে সেই array এর উপাদান গুলা একটা একটা করে আউটপুট হিসেবে দেখাও  */
+
+/* var usedPhone = ['Alcatel', 'Nokia', 'Samsung', 'Motorolla', 'walton', 'Xaomi', 'One Plus'];
+
+var loopVariable = 0;
+
+while (loopVariable < usedPhone.length) {
+    console.log (usedPhone[loopVariable]);
+    loopVariable++;
+} */
+
+// ==================================================================
+
+/* 24) একটা ফর লুপ চালাও। ৩০ থেকে ৮৬ পর্যন্ত। আর এই লুপ ৪৪ এ গেলে ব্রেক করবে। সেই জিনিস কোড করে দেখাও  */
+
+/* for (var i=30; i<=86;i++) {
+    console.log(i);
+    if  (i >= 44) {
+        break;
+    }
+} */
+
+// ==================================================================
+
+/* 
+25) তোমার যত বই আছে সেগুলার দাম নিয়ে একটা array লিখে ফেলো। যে বই গুলোর দাম ২০০ টাকার উপরে সেগুলাকে স্কিপ করবে। অর্থাৎ সেগুলাকে আউটপুট হিসেবে দেখাবে না। বাকিদের কে আউটপুট হিসেবে দেখাবে। দেখো করতে পারো কিনা।  */
+
+/* var bookPrice = [230, 440, 120, 300, 50, 330, 750];
+
+for (var i = 0; i<bookPrice.length; i++) {
+    if (bookPrice[i] > 200) {
+        continue;
+    }
+    console.log('Price of my book',i,'=', bookPrice[i]);
+} */
+
+// ==================================================================
+
+/* 
+26) Write a function called foo() which prints “foo” and a function called bar() which prints
+“bar”. Call function bar() in the foo() function after printing. What will be the output? Now call
+the foo() to see the output. */
+
+/* function bar () {
+    console.log ('bar');
+}
+
+function foo () {
+    console.log ('foo');
+    bar ();
+}
+
+//Calling bar() in foo() doesn't make any output in console.
+
+// if we call foo () , it will first call foo() function console the foo() content and then call bar() , and console the content inside bar()
+foo(); */
+
+// ==================================================================
+
+/* 
+27) Write a function called make_avg() which will take an three integers and return the
+average of those values. */
+
+/* function make_avg (num1, num2, num3) {
+    const average = (num1+num2+num3)/3;
+    return average;
+}
+const average = make_avg(5,10,2);
+console.log (average); */
+
+// ==================================================================
+
+/* 28)  Write a function called make_avg() which will take an array of
+integers and the size of that array and return the average of those values. */
+
+/* function make_avg (numbers, length) {
+    let sum = 0;
+    for (let i = 0; i < length; i++) {
+        sum +=numbers[i];
+    }
+    let average = sum/length;
+    return average;
+}
+
+let array = [10,10,30,30];
+
+let result = make_avg (array, array.length); 
+console.log(result); */
+
+// ==================================================================
+/* 
+ 29) Write a function called odd_even() which takes an integer value and tells
+whether this value is even or odd. You need to do it in 4 ways:
+    ● Has return + Has parameter
+    ● No return + Has parameter */
+    
