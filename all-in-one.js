@@ -500,4 +500,113 @@ console.log(result); */
 whether this value is even or odd. You need to do it in 4 ways:
     ● Has return + Has parameter
     ● No return + Has parameter */
-    
+
+ // Has Return + Has Parameter   
+/*  
+function odd_even (integer) {
+
+    if (integer % 2 === 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+const isPrime = odd_even (3);
+
+if (isPrime) {
+    console.log ('even');
+}
+else {
+    console.log ('odd');
+}
+ */
+// No return + Has parameter
+
+/* function odd_even (integer) {
+
+    if (integer % 2 === 0) {
+        console.log ('even');
+    }
+    else {
+        console.log ('odd');
+    }
+}
+odd_even (3); */
+
+// ==================================================================
+
+/* 30) You are in a hurry to go to your school on time. But when you are crossing
+the road, the traffic signal is red coloured. In this situation, if you try to cross the
+road, you may be in danger.If you notice a yellow coloured traffic signal, you
+should stop. If you notice a green coloured traffic signal, you should cross the
+road. So write a JS code, where there is a variable called signal. Its value can
+be green, yellow or red & we will get different activities as output depending on
+the variable. So, hurry up. */
+
+// Ans: Same As Problem 11
+
+// ==================================================================
+
+/* 31) একটা ফাংশন লিখবা যেটা ১৩ এর নামতা (multiplication table) আউটপুট হিসেবে দেখাবে।  */
+
+/* function multiplicationTable (number) {
+    console.log ('Below is a code for the multiplication table = 13')
+    for (var i = 1; i <= 10; i++) {
+        result = number*i;
+        console.log(number, 'x', i, '=', result);
+    }
+}
+
+multiplicationTable (13); */
+
+// ==================================================================
+/* 
+32) একটা ফাংশন লিখবা যেটা যেকোন নামকে uppercase বা রেগুলার কেইস হিসেবে নিবে আর আউটপুট হিসেবে সেই নাম lowercase করে রিটার্ন করবে। */
+
+/* function anyCase (name) {
+    const lowerCase = name.toLowerCase();
+    return lowerCase;
+}
+
+myString = 'ZAKIR sHimA KhatuN kE valoBashE, OneK bEsHi valoBASHE';
+
+const lowerCaseValue = anyCase (myString);
+console.log (lowerCaseValue); */
+
+// ==================================================================
+
+/* 33) fullName নামে একটা ফাংশন তৈরী কর যেটা তোমার নামের প্রথম অংশ এবং তোমার নামের শেষের অংশ প্যারামিটার হিসেবে নিবে। আর তোমার নামের দুই অংশ জোড়া দিয়ে আউটপুট হিসেবে তোমার পূর্ন নাম রিটার্ন করে দিবে। যেমন ধরো, hablu এবং kanto ইনপুট প্যারামিটার হিসেবে দিলে আউটপুট হিসেবে hablu kanto রিটার্ন করবে।  */
+
+/* function fullName (firstName, lastName) {
+    const FullName = firstName + ' ' + lastName;
+    return FullName;
+}
+
+const myFullName = fullName ('zakir', 'hossain');
+console.log(myFullName); */
+
+// ==================================================================
+
+/* 34) একটা ফাংশন লিখবা যেটাকে তুমি কোন সংখ্যাকে ইনপুট হিসেবে দিলে সে সেই সংখ্যার square করে সেই square কে রিটার্ন করবে। */
+
+/* function square (number) {
+    console.log (number*number);
+}
+square (9); */
+
+// ==================================================================
+
+/* 35)  pizza নামের একটা object কে নিচের উদাহরণ মতো define করবা, এবং pepperoni প্রিন্ট করবা। */
+
+/* const pizza = {
+    toppings: ['cheese', 'sauce', 'pepperoni'],
+    crust: 'deep dish',
+    serves: 2
+}
+
+console.log (pizza.toppings[2]); */
+
+// ==================================================================
+module 19 porjonto okay
