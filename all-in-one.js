@@ -609,4 +609,362 @@ square (9); */
 console.log (pizza.toppings[2]); */
 
 // ==================================================================
-// module 19 porjonto okay
+
+/* 
+36) Write a function that will take hour as the input parameter and will convert it
+into minutes and will return the result in minutes.
+ */
+/* 
+function hourToMinute (hour) {
+    let minutes = hour*60;
+    return minutes;
+}
+
+let minute = hourToMinute (2);
+console.log(minute); */
+
+// ==================================================================
+
+/*37) Write a function findLeapYear() that will take the array [2023, 2024, 2025,
+2028, 2030] as the input parameter and will check if each year is a leap year. If
+a year is a leap year insert that year in a new array, return the new array and
+print the result. */
+
+/* function findLeapYear (years) {
+    let leapYear = [];
+    for (let i = 0; i < years.length; i++) {
+        if ((years[i] % 4 === 0) && ((years[i] % 100 !== 0) || (years[i] % 400 === 0))) {
+            leapYear.push(years[i]);
+        }
+    }
+    return leapYear;
+    
+}
+
+let year = [2020, 2023,2024,2025,2028,2030];
+let leapYear = findLeapYear(year);
+console.log(leapYear);  */
+
+// ==================================================================
+/* 
+38) Write a function findOddSum() that will take the array [ 5, 7, 8, 10, 45, 30 ]
+as the input parameter and will return the sum of the odd numbers. */
+/* 
+function findOddSum(randomNumbres) {
+    console.log ('My given Array:', randomNumbres)
+    let sumOfOddNumber = 0;
+    let oddNumberfromArray = [];
+    for (let i = 0; i < randomNumbres.length; i++) {
+        let remainder = randomNumbres[i] % 2;
+        if (remainder === 1) {
+            oddNumberfromArray.push(randomNumbres[i]); //odd numbre empty array te push kora hocche
+            sumOfOddNumber += randomNumbres[i]; // sum hocche
+        }
+    }
+    console.log ('Array of Odd Numbers: ', oddNumberfromArray);
+    return sumOfOddNumber;
+}
+
+var numbers = [2, 3, 5, 9, 8, 3, 1];
+var oddNumbers = findOddSum(numbers);
+console.log('Sum of odd Numbers:', oddNumbers); */
+
+// ==================================================================
+
+/* 39)  leapYear() নামে ফাংশন লিখো এবং নেক্সট ইয়ার অর্থাৎ ২০২৩ কি leap year নাকি সেটা চেক করো। Leap year হলে ফাংশন true রিটার্ন করবে আর leap year না হলে false রিটার্ন করবে। */
+
+/* function checkLeapYear (year) {
+    if ((year % 4 === 0) && ((year % 100 !== 0) || (year % 400 === 0))) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
+
+let decision = checkLeapYear(2028);
+console.log(decision); */
+
+// ==================================================================
+/* 
+40) তোমার বয়স কি odd নাকি even সংখ্যা সেটা চেক কর একটা ফাংশন দিয়ে। সেই ফাংশনকে কোন সংখ্যা প্যারামিটার হিসেবে দিলে, সেই সংখ্যা Even হলে ফাংশন true রিটার্ন করবে আর Odd হলে false রিটার্ন করবে। */
+
+/* function checkAge (age) {
+    if (age % 2 === 0) {
+        console.log('My age is Even');
+        return true;
+    }
+    else {
+        console.log ('My age is Odd');
+        return false;
+    }
+}
+
+let isEven = checkAge (28);
+console.log (isEven); */
+
+// ==================================================================
+/* 
+41)  এমন একটা ফ্যাংশনা লিখো যেটাকে তুমি ঘন্টাকে ইনপুট প্যারামিটার হিসেবে দিবে। আর সে সেই ঘন্টাকে মিনিটে কনভার্ট করে মিনিট রিটার্ন করবে। 
+ */
+
+/* Solution: See solution of 36 No. Problem */
+
+// ==================================================================
+
+/* 42) মনে করো তোমার ৪ ঘণ্টা লাগবে ঢাকাই পোঁছতে। তুমি এখন এ ভ্যালু ৪ কে একটা ফাংশনে পাঠাবা এবং সে ফাংশন ভেলু ৪ কে second এ convert করে তোমাকে রিটার্ন করবে। */
+/* 
+function hourToSecond (hour) {
+    let second = hour*60*60;
+    return second;
+}
+
+let second = hourToSecond (4);
+console.log(second); */
+
+// ==================================================================
+
+/* 43) তোমাকে ফাংশনের ইনপুট হিসেবে সেলসিয়াস দিবে। তুমি ক্যালকুলেশন করে তাপমাত্রা ফারেনহাইট এ কনভার্ট করে সেটার আউটপুট রিটার্ন করবে  */
+
+/* function celciusToFahrenheit (celcius) {
+    const fahrenheit = (celcius * 1.8) + 32;
+    return fahrenheit;
+}
+
+const fahrenheit = celciusToFahrenheit (30);
+console.log (fahrenheit);
+*/
+
+// ==================================================================
+
+/* 43) একইভাবে উল্টা হিসাব করবে। যাতে তোমাকে ফারেনহাইট হিসেবে তাপমাত্রা দিলে সেটাকে সেলসিয়াস এ কনভার্ট করে আউটপুট দিবে।  */
+/* 
+function fahrenheitToCelcius (fahrenheit) {
+    const celcius = (fahrenheit - 32) * (5/9);
+    return celcius;
+}
+
+const celcius = fahrenheitToCelcius (0);
+console.log (celcius);
+ */
+
+// ==================================================================
+
+/* 44) একটা কোড লিখো। যেটা দিয়ে কোন একটা array এর মধ্যে সবচেয়ে ছোট সংখ্যা বের করে দিতে পারবে। */
+
+/* let numbers = [2,5,6,7,3,7,8,0,4,457,1,-2,45,6,4,6,47,7,85,4,658757,8,6,5,58-23423,4234,-42];
+console.log (numbers.length);
+let smallest = numbers[0];
+// console.log (smallest);
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] < smallest) {
+        smallest = numbers[i];
+    }
+}
+console.log(smallest);
+ */
+
+// ==================================================================
+
+/* 45) একটা ফাংশন লিখো। সেই ফাংশনের মধ্যে ইনপুট হিসেবে একটা array নিবে। সেই array এর মধ্যে অনেকগুলা সংখ্যা থাকবে। তোমার কাজ হবে ইনপুট নেয়া array এর মধ্যে যতগুলা সংখ্যা আছে। সেই সংখ্যা গুলার গড় বের করবে। তারপর সেই গড় ফাংশনের রিটার্ন হিসেবে দিয়ে দিবে। একটু চিন্তা করো। বুঝার চেষ্টা করো। ট্রাই করো। দেখো পারো কিনা।  */
+
+
+/* function arrayAvg (numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum +=numbers[i];
+    }
+    let average = sum/numbers.length;
+    return average;
+}
+
+let array = [10,10,30,10];
+
+let result = arrayAvg (array); 
+console.log(result);
+ */
+
+// ==================================================================
+
+/* 46) একটা ফাংশন লিখো। যেটা ইনপুট প্যারামিটার হিসেবে একটা আয়তক্ষেত্রের দৈর্ঘ্য আর উচ্চতাকে নিবে। তারপর সেই আয়তক্ষেত্র এর area (আয়তন) কে রেজাল্ট হিসেবে রিটার্ন করবে। */
+/* 
+function areaOfRectangular (width , height) {
+    const area = width * height;
+    return area;
+}
+const area = areaOfRectangular (2,4);
+console.log (area);
+ */
+
+// ==================================================================
+
+/* 47) (ট্রিকি) কোন একটা array এর মধ্যে অনেকগুলা সংখ্যা আছে। সেই সংখ্যাগুলো থেকে second largest সংখ্যা বের করার একটা প্রোগ্রাম লিখো। দরকার হলে গুগলে সার্চ দাও। তারপর সার্চ রেজাল্ট দেখে বুঝে বুঝে করার চেষ্টা করো।  */
+
+/* array er 1st elemet er sathe next protita element check korte hobe, 1st element j elemet theke boro hobe sei element er sathe first element k swap korte hobe. ei jonno nested loop lagbe, prothom loop a ekta element nibo, then porer loop a next element theke check kora suru korbo. jokhn next kono element 1st element theke choto hobe tokhn swap kore dite hobe. */
+
+/* const numbers = [1, 4, 5, 1, 5, 8, 86, 4, -5, 7, 345, 235, 2, 46, 7,223,300];
+let temp = 0;
+for (let i = 0; i < numbers.length; i++) {
+    for (let j = i + 1; j < numbers.length; j++) {
+        if (numbers[i] < numbers[j]) {
+            //swaping
+            temp = numbers[i];
+            numbers[i] = numbers[j];
+            numbers[j] = temp;
+        }
+    }
+}
+// console.log(numbers.reverse());
+console.log('Reverse Sorted Array: ', numbers);
+console.log('Largest number: ', numbers[0]);
+console.log('Second Largest number: ', numbers[1]); */
+
+// ==================================================================
+
+/*
+48) একটা ফাংশন লিখো। সেটার মধ্যে তিনটা প্যারামিটার নিবে। এই তিনটা প্যারামিটার হবে কোন একটা ত্রিভুজের তিনটা বাহু এর দৈর্য্য। এখন তোমার কাজ হচ্ছে ফাংশনের ভিতরে কিছু হিসাব নিকাশ করে ত্রিভুজের area (আয়তন) বের করা। কোন একটা ত্রিভুজের তিনটা বাহুর দৈর্য্য দেয়া থাকলে সেটা থেকে কিভাবে আয়তন বের করতে হয় সেই ফর্মুলা গুগল থেকে খুঁজে বের করো।  */
+
+/* const sideA = 3;
+const sideB = 4;
+const sideC = 6;
+
+// console.log(Math.sqrt(4));
+
+function areaOfTriangle (sideA, sideB, sideC) {
+    const s = (sideA+sideB+sideC)/2;
+    const area = Math.sqrt(s*(s-sideA)*(s-sideB)*(s-sideC));
+    const decimal2point = parseInt (area.toFixed(3)) ;
+    console.log (decimal2point);
+    console.log (typeof decimal2point);
+}
+
+areaOfTriangle (sideA, sideB, sideC);
+
+// ==================================================================
+
+
+/* 49) কোন একটা সংখ্যা প্রাইম সংখ্যা (prime number) কিনা। সেটা চেক করার একটা ফাংশন লিখো। */
+/* 
+function isPrime (number) {
+    console.log ('You entered: ', number);
+    if (number === 1) {
+        return false;
+    }
+    else if (number > 1) {
+        const factors = [];
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                factors.push(i);
+            }
+        }
+        console.log('Factors of this number are: ', factors);
+        const length = factors.length;
+        // console.log(length);
+        if (length === 2) {
+            return true;
+        }
+        else {
+    
+            return false;
+        }
+    }
+    // check for 0 and negative number
+    else {
+        return false;
+    }
+}
+
+const number = -1;
+const result = isPrime(number);
+
+if (result) {
+ console.log ('This Number is Prime Number');
+}
+
+else {
+ console.log ('This is NOT Prime Number');
+}
+ */
+
+// ==================================================================
+
+/* 50) সিম্পল একটা ফাংশন লিখতে হবে। যেটার নাম হবে feetToInch এবং এই ফাংশন ইনপুট হিসেবে নিবে feet আর রিটার্ন করবে inch । অর্থাৎ এই ফাংশনকে কোন একটা ফিট বলে দিলে সে রিটার্ন হিসেবে বলে দিবে কত ইঞ্চি হয়।  */
+
+/* function feetToInch (feet) {
+    const inch = feet*12;
+    return inch;
+}
+const inch = feetToInch (2);
+console.log(inch); */
+
+// ==================================================================
+
+/* 51) একদম ফাংশন এর নাম হুবহু centimeterToMeter নাম দিয়ে একটা ফাংশন লিখবে। এই ফাংশনে ইনপুট হিসাবে কেউ সেন্টিমিটার দিবে আর সেই সেন্টিমিটার কে মিটার এ কনভার্ট করে রেজাল্ট রিটার্ন করবে।  */
+
+/* function centimeterToMeter (centimeter) {
+    const meter = centimeter * (1/100);
+    return meter;
+}
+const meter = centimeterToMeter (1000);
+console.log (meter); */
+
+// ==================================================================
+
+/* 52) আরেকটা ফাংশন লিখবে যেটার নাম লিখবে। যেই ফাংশনের নাম হবে paperRequirements এই ফাংশনের প্যারামিটার হিসেবে তিনটা প্যারামিটার হবে। প্রথম প্যারামিটার হবে তুমি প্রথম বই কত কপি ছাপাতে চাও। সেকেন্ড প্যারামিটার হবে তুমি সেকেন্ড বই কত কপি ছাপাতে চাও। আর থার্ড প্যারামিটার হবে তুমি থার্ড বই কত কপি ছাপাতে চাও। অর্থাৎ কোন বই এর কত কপি ছাপানো হবে সেটাই প্যারামিটার হিসেবে নিবে। 
+এইবার ভালো করে খেয়াল করো। 
+
+-> প্রথম বই ছাপানোর জন্য পৃষ্ঠা লাগবে ১০০ টা 
+-> সেকেন্ড বই ছাপানোর জন্য পৃষ্ঠা লাগবে ২০০ টা 
+-> তৃতীয় বই ছাপানোর জন্য পৃষ্ঠা লাগবে ৩০০ টা 
+
+এখন তোমার কাজ হচ্ছে paperRequirements নামক ফাংশন লিখে ফেলা যাতে। সেই ফাংশনকে কল করে কোন বই এর কত কপি লাগবে বলে দিবে প্যারামিটার হিসেবে। আর ফাংশন হিসাব করে বলে দিবে তোমার সর্বমোট কতপৃষ্ঠা কাগজ লাগবে। 
+
+উত্তর হিসেবে সংখ্যা রিটার্ন করবে।  */
+
+/* function paperRequirements (copyOf1stBook, copyOf2ndBook, copyOf3rdBook) {
+    const pageRequiredFor1stBook = 100;
+    const pageRequiredFor2ndBook = 200;
+    const pageRequiredFor3rdBook = 300;
+
+    const totalPageFor1stBook = copyOf1stBook * pageRequiredFor1stBook;
+    const totalPageFor2ndBook = copyOf2ndBook * pageRequiredFor2ndBook;
+    const totalPageFor3rdBook = copyOf3rdBook * pageRequiredFor3rdBook;
+
+    const totalPageRequired = totalPageFor1stBook + totalPageFor2ndBook + totalPageFor3rdBook;
+
+    return totalPageRequired;
+
+}
+
+const totalCopies = paperRequirements (1,1,1);
+console.log (totalCopies); */
+
+// ==================================================================
+
+/* 
+53) একটা ফাংশন লিখবে। এই ফাংশনের নাম হবে bestFriend তারপর সেই ফাংশনে ইনপুট প্যারামিটার হিসেবে একটা array নিবে। সেই array এর মধ্যে তোমার সব ফ্রেন্ডের নাম থাকবে। এখন তোমার কাজ হচ্ছে যে ফ্রেন্ড এর নাম সবচেয়ে বড় সেই ফ্রেন্ড এর নাম রিটার্ন করে দেয়া। এই ক্ষেত্রে তুমি নামটা অর্থাৎ ফ্রেন্ডের নাম (স্ট্রিং) রিটার্ন করতে হবে।  */
+
+/* function bestFriends (arrayOfNames) {
+        let largestName = arrayOfNames[0];
+        let largestNameLength = largestName.length;
+
+    for (let i = 0; i < arrayOfNames.length; i++) {
+        const name = arrayOfNames[i];
+        const nameLength = name.length;
+
+        if (largestNameLength < nameLength) {
+            largestNameLength = nameLength;
+            largestName = name;
+        }
+    }
+    return largestName;
+    
+}
+
+const frindsName = ['Monoara Begum', 'Zafran Jahangir Niloy','ami sobar theke boro hote cai, tai amar nam ta show koro', 'Sima Khatun','nay', 'A k Zahangir Alam Ripon, sima khatun, zafran jahangir, monoara begum', 'Zakir HossainZakir HossainZakir HossainZakir HossainZakir HossainZakir HossainZakir HossainZakir HossainZakir HossainZakir HossainZakir HossainZakir HossainZakir HossainZakir Hossain'];
+
+const bestFriend = bestFriends (frindsName);
+console.log (bestFriend); */
+
+// ==================================================================
