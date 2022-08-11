@@ -1057,3 +1057,35 @@ console.log (newSentece.join (' ')); */
 // ==================================================================
 
 /* 58) Create a Fibonacci Series using a for loop */
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+
+/* const fiboSeries = [0, 1];
+
+for (let i = 2; i <= 12; i++) {
+
+    fiboSeries[i] = fiboSeries[i-1] + fiboSeries [i-2];
+}
+console.log (fiboSeries); */
+
+/* 
+num0 = 0
+num1 = 1
+
+num2 = num0 + num1
+num3 = num1 + num2
+num4 = num2 + num3
+num5 = num3 + num4
+
+num[i] = num[i-1] + num [i-2]
+
+*/
+
+/* let givenNum1 = 0;
+let givenNum2 = 1;
+
+for (let i = 0; i <= 10; i++) {
+    console.log(givenNum1);
+    let thirdNumber = givenNum1 + givenNum2;
+    givenNum1 = givenNum2;
+    givenNum2 = thirdNumber;
+} */
