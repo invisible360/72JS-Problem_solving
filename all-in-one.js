@@ -968,3 +968,92 @@ const bestFriend = bestFriends (frindsName);
 console.log (bestFriend); */
 
 // ==================================================================
+
+/* 54 ) String comparison using toLowerCase toUpperCase */
+/* 
+const userName = 'ZakiR Hossain';
+const userInput = 'zakir HOSSAIN';
+
+function stringComparison ( userName, userInput) {
+    if (userName.toLowerCase() === userInput.toLowerCase()) {
+        console.log ('Valid User');
+    }
+    else {
+        console.log ('Invalid User');
+    }
+}
+
+stringComparison (userName, userInput); */
+
+// ==================================================================
+
+/* 55) Apply Search includes, indexOf, startswith(see documentation), endswith(see documentation) */
+/* 
+const jikr = 'SubhanAllah Alhamdulillah La Ilaha Illallahu Allahu Akbar';
+const jikrLowerCase = jikr.toLocaleLowerCase ();
+// console.log (jikrLowerCase);
+
+// Searching way-1: using includes() method
+if (jikrLowerCase.includes('alhamdulillahi')) {
+    console.log ('Found Alhamdulillah');
+}
+else {
+    console.log ('Not Found')
+}
+
+//Searching way-2: using indexOf() method
+if (jikrLowerCase.indexOf('alhamdulillahi') !== -1) {
+    console.log ('Found Alhamdulillah');
+}
+else {
+    console.log ('Not Found')
+}
+
+ */
+// ==================================================================
+
+/* 56) How to split, slice, substr, substring, concat, join */
+/* 
+const jikr = 'SubhanAllah, Alhamdulillah, La Ilaha Illallahu, Allahu Akbar';
+const bestJikr = ' -Best jikr'
+const characterSplit = jikr.split('');
+const wordSplit = jikr.split(',');
+const slice = jikr.slice (0, 20);
+const substring = jikr.substring (0, 20);
+const concatanation = jikr.concat(bestJikr);
+const text = ['zakir hossain', 'zafran jahangir alam', 'monoara begum'];
+const joint = text.join (', ');
+// console.log (slice);
+// console.log (substring);
+// console.log (concatanation);
+// console.log (joint);
+ */
+
+// ==================================================================
+
+/* 57) Reverse a string and Reverse words in a sentence */
+
+/* const text = 'Complete Web Development Course With Jhankar Mahbub';
+const words = text.split(' ');
+// console.log(text.length);
+
+//Reverse a string
+let reverse = '';
+for (let i = text.length - 1; i >= 0 ; i--) {
+    console.log (text[i]);
+    reverse += text[i];
+}
+console.log (reverse);
+
+//Reverse a words
+const newSentece = [];
+for (let i = words.length - 1; i >= 0 ; i--) {
+    console.log (words[i]);
+    newSentece.push(words[i]);
+}
+console.log (newSentece);
+console.log (newSentece.join (' ')); */
+
+// ==================================================================
+
+/* 58) Create a Fibonacci Series using a for loop */
