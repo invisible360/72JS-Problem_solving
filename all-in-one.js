@@ -501,7 +501,7 @@ whether this value is even or odd. You need to do it in 4 ways:
     ● Has return + Has parameter
     ● No return + Has parameter */
 
- // Has Return + Has Parameter   
+// Has Return + Has Parameter   
 /*  
 function odd_even (integer) {
 
@@ -1089,3 +1089,133 @@ for (let i = 0; i <= 10; i++) {
     givenNum1 = givenNum2;
     givenNum2 = thirdNumber;
 } */
+
+// ==================================================================
+
+
+/* 59) Remove duplicate items from an array */
+/* 
+const names = ['abul', 'kabul', 'dabul', 'abul', 'tania', 'fatema', 'sima', 'lima', 'ar nam nai', 'abdullah', 'sima', 'zakir', 'abul', 'kabul', 'karim', 'lima', 'dabul'];
+
+const uniqueName = [];
+for (let i = 0; i < names.length; i++) {
+    console.log (names);
+    if (uniqueName.includes(names[i]) === false) { 
+        uniqueName.push(names[i]);
+    }
+}
+console.log(uniqueName);
+
+ */
+
+// ==================================================================
+
+/* 60) Write foo, bar, foobar if divisible by 3 or 5 or both */
+/* 
+for (let i = 0; i <= 50; i++) {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        console.log ('foo-bar');
+    }
+    else if (i % 3 === 0) {
+        console.log ('foo');
+    }
+    
+    else if (i % 5 === 0){
+        console.log ('bar');
+    }
+    
+    else {
+        console.log(i);
+    }
+}
+ */
+
+// ==================================================================
+
+/* 61) Find the cheapest phone from an array of phone objects */
+/* 
+ const phones = [
+    {name: 'motorolla', price: 12000},
+    {name: 'Nokia', price: 10000},
+    {name: 'OnePLus', price: 52000},
+    {name: 'HTC', price: 100000},
+    {name: 'iPhone', price: 92000},
+    {name: 'walton', price: 2000},
+    {name: 'vivo', price: 1000},
+ ]
+//  let cheapestDetails = phones[0];
+ let cheapest = phones[0];
+ for (let i = 0; i < phones.length; i++) {
+    if (phones[i].price < cheapest.price){
+        cheapest = phones[i];
+        // let cheapestDetails = phones[i];
+    }
+ }
+console.log (cheapest);
+
+ */
+
+/* 62) Calculate the total cost of the products in a shopping cart */
+/* 
+const carts = [
+    {name: 'chair', price: 6300, quantity: 5},
+    {name: 'table', price: 9999, quantity: 6},
+    {name: 'Bed', price: 29029, quantity: 12},
+    {name: 'Net', price: 249, quantity: 17},
+    {name: 'Pellow', price: 777, quantity: 37},
+    {name: 'Nokshi Katha', price: 4444, quantity: 14},
+    {name: 'Kushon', price: 660, quantity: 18},
+    {name: 'porda', price: 330, quantity: 18},
+    {name: 'ghori', price: 555, quantity: 6},
+    {name: 'bag', price: 4446, quantity: 4}
+ ]
+let totalPrice = 0;
+for (let i = 0; i < carts.length; i++) {
+    totalPrice += carts[i].price * carts[i].quantity ;
+}
+console.log (totalPrice);
+ */
+
+
+/* 63) Multi-layer discount price calculation 
+1. if ticket price less than 100, price--->100
+
+2. if ticket price more than 100 but less 200 ,
+1st 100 price--->100tk
+rest price --->90tk
+
+3. if ticket price more than 200,
+1st 100 price--->100tk
+101-200 ---> 90tk
+200+ ---> 70tk
+*/
+/* function totalTicketPrice(amountOfTickets) {
+    if (amountOfTickets < 100) {
+        const ticketPrice = amountOfTickets * 100;
+        return ticketPrice;
+    }
+    else if (amountOfTickets > 100 && amountOfTickets < 200) {
+
+        const restTicketPrice = (amountOfTickets - 100) * 90;
+        const first100price = (amountOfTickets - (amountOfTickets - 100)) * 100;
+        const totalPrice = first100price + restTicketPrice;
+        return totalPrice;
+    }
+
+    else {
+        const remainig3rd = amountOfTickets-200;
+        const remainig3rdPrice = remainig3rd * 70;
+        const remainig2nd = (amountOfTickets - remainig3rd) - 100;
+        const remainig2ndPrice = remainig2nd * 90;
+        const remainig1st = remainig2nd;
+        const remainig1stPrice = remainig1st*100;
+
+        const total = remainig3rdPrice + remainig2ndPrice + remainig1stPrice;
+        return total;
+    }
+}
+
+const totalPriceAfterDiscount = totalTicketPrice(350);
+console.log(totalPriceAfterDiscount);
+
+ */
